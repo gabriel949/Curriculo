@@ -6,10 +6,10 @@
 }
 
 .imag{
-background:url("../img/imagem.jpg");
+background:url("../img/back.svg");
 background-repeat: no-repeat;
 height: 100vh;
-background-size: 100% 100%;
+background-size: cover;
 text-align: center;
 }
 
