@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 	<title>Gabriel Victor Oliveira de Paula Costa</title>
@@ -7,9 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 </head>
 
@@ -52,23 +50,15 @@
 	</div>
 
 	<div class="sobre">
-
+		<img class="img-box" src="./img/kait-loggins-291456-min.jpg"/>
+     <div class="article-box">
 		<article>
-			<div class="wow bounceInUp">
-				<h1 class="title">Sobre</h1>
-			</div>
-			<i class="material-icons md-48">account_circle</i>
-			<div class="wow slideInLeft">
+				<h1 class="title">Sobre</h1>	
 				<p class="paragrafo">Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer in sapien. Fusce
 					tellus odio, dapibus id, fermentum quis, suscipit id, erat. Fusce aliquam vestibulum ipsum. Aliquam erat volutpat. Pellentesque
 					sapien. Cras elementum. Nulla pulvinar eleifend sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
 					ridiculus mus. Quisque porta. Vivamus porttitor turpis ac leo.</p>
-				<p class="paragrafo">Etiam posuere quam ac quam. Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum. Etiam quis quam. Integer lacinia.
-					Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer vulputate sem a nibh rutrum
-					consequat. Maecenas lorem. Pellentesque pretium lectus id turpis. Etiam sapien elit, consequat eget, tristique non,
-					venenatis quis, ante. Fusce wisi. Phasellus faucibus molestie nisl. Fusce eget urna. Curabitur vitae diam non enim vestibulum
-					interdum. Nulla quis diam. Ut tempus purus at lorem.
-				</p>
+				
 
 		</article>
 		</div>
@@ -77,9 +67,7 @@
 
 		<section id="formation">
 
-			<h2 class="title">Formação</h2>
-
-			<i class="material-icons md-48">school</i>
+			<h2 class="title">Formação</h2>			
 			<ul>
 				<li>
 					<a class="alinhar" href="www.pucminas.br">PUC Minhas - Bracharel em Sistemas de Informação <small>(2016)</small></a>
@@ -89,31 +77,29 @@
 
 	</div>
 <div class="conhecimento">
-	<h2 class="title">Conhecimentos</h2>
-	<i class="material-icons md-48">format_align_left</i>
-
+	
 	<section id="skills">
-		<div class="wow animated infinite bounceInLeft" data-wow-duration="1s">
-			<progress value="80" max="100"></progress><span>HTML</span>
-		</div>
-		<div class="wow animated infinite bounceInLeft" data-wow-duration="1.5s">
-			<progress value="70" max="100"></progress><span>CSS</span>
-		</div>
-		<div class="wow animated infinite bounceInLeft" data-wow-duration="2s">
-			<progress value="60" max="100"></progress><span>JavaScript</span>
-		</div>
-		<div class="wow animated infinite bounceInLeft" data-wow-duration="2.5s">
-			<progress value="70" max="100"></progress><span>Angular</span>
-		</div>
-		<div class="wow animated infinite bounceInLeft" data-wow-duration="3s">
-			<progress value="60" max="100"></progress><span>C#</span>
-		</div>
-		<div class="wow animated infinite bounceInLeft" data-wow-duration="3.5s">
-			<progress value="80" max="100"></progress><span>Java</span>
-		</div>
-		<div class="wow animated infinite bounceInLeft" data-wow-duration="4s">
-			<progress value="80" max="100"></progress><span>MySQL</span>
-		</div>
+			<h2 class="title" style='margin-bottom:40px;text-align:center;'>Conhecimentos</h2>
+		
+			<p class="name-skill">HTML</p><progress value="80" max="100"></progress>
+	
+	
+			<p class="name-skill">CSS</p><progress value="70" max="100"></progress>
+	
+	
+			<p class="name-skill">JavaScript</p><progress value="60" max="100"></progress>
+		
+		
+			<p class="name-skill">Angular</p><progress value="70" max="100"></progress>
+		
+			<p class="name-skill">C#</p><progress value="60" max="100"></progress>
+		
+	
+			<p class="name-skill">Java</p><progress value="80" max="100"></progress>
+	
+		
+			<p class="name-skill">MySQL</p><progress value="80" max="100"></progress>
+		
 	</section>
 </div>
 	<div class="footer">
@@ -121,12 +107,11 @@
 			&copy; 2017 - Gabriel de Paula
 		</footer>
 	</div>
-
-	<script src="js/wow.min.js"></script>
+	
 	<script src="js/jquery.min.js"></script>
-	<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+	<script src='js/jquery-ui.min.js'></script>
 	<script>
-		new WOW().init();
+
 		$(function () {
 			$('progress').each(function () {
 				var max = $(this).val();

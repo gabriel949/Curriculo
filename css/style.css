@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .imag {
@@ -69,43 +69,29 @@ li a {
 
 .title {
 	font-size: 40px;
-	margin-left: 110px;
-	margin-top: 50px;
-}
-
-.material-icons.md-48 {
-	font-size: 48px;
-	margin-left: 110px;
-	margin-bottom: 30px;
 }
 
 .paragrafo {
 	padding: 20px 30px 5px 0px;
 	font-size: 18px;
-	margin-left: 110px;
 }
 
-section,
-article {
-	margin-left: 110px;
+section
+ {
 	max-width: 800px;
 }
 
 .formacao {
-	padding-top: 1px;
+	padding: 80px 15px 100px 140px;
 	margin-top: 100px;
 	color: #ffffff;
 	height: 280px;
-	background: url('../img/emile-perron-190221.jpg')no-repeat;
+	background: url('../img/emile-perron-190221-min.jpg')no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
 	min-height: 100%;
-}
-
-.alinhar {
-	margin-left: 110px;
 }
 
 @-webkit-keyframes ani-mouse {
@@ -247,29 +233,61 @@ article {
 }
 
 progress {
-	background-color: #d98ef9;
+	background-color: #cfddfc;
 	border: 0;
-	height: 30px;
-	;
+	height: 12px;
 	width: 100%;
+	border: 1px solid #cfddfc;
+	border-radius: 10px;
 }
 
 progress::-webkit-progress-bar {
-	background-color: #d98ef9;
+	background-color: #cfddfc;
+	
 }
 
 progress::-webkit-progress-value {
-	background-color: #64088c;
+	background-color: #2661e2;
+	border: 1px solid #2661e2;
+	border-radius: 10px;
 }
 
 progress::-moz-progress-bar {
-	background-color: #64088c;
+	background-color: #2661e2;
+	border: 1px solid #2661e2;
+	border-radius: 10px;
 }
-
-.conhecimento {
-	margin-left: 110px;
+.conhecimento{
+padding-top: 45px;
+	
+}
+#skills{
+	
+	margin: 0 auto;
 }
 
 .contacts li {
+	margin-top: 15px;
 	display: inline-block;
+}
+
+.img-box{
+	max-width: 800px;
+	margin-top:60px;
+	margin-left: 140px;
+	position: relative;
+}
+
+.article-box{
+	padding: 20px 20px 20px 15px;
+    background-color: #ffffff;
+	position: absolute;
+	left: 700px;
+	top:800px;
+	max-width: 500px;
+}
+
+.name-skill{
+	margin-top:10px;
+
 }
