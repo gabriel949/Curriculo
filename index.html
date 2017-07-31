@@ -6,121 +6,137 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="vendors/animate.css">
+	<link rel="stylesheet" href="vendors/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 </head>
 
 <body>
-	<div class="imag">
-		<img id="foto" src="http://graph.facebook.com/100004999451297/picture?type=large">
-		
-		<h1 id="nome">Gabriel de Paula</h1>
+	<div class='container-fluid'>
+		<div class="row">
+			<div class="imag">
+				<img id="foto" src="http://graph.facebook.com/100004999451297/picture?type=large">
 
-		<div id="informacoes">
-			<ul class="contacts">
-				<li>
-					<a href="tel:+5531975287424">
+				<h1 id="nome">Gabriel de Paula</h1>
+
+				<div id="informacoes">
+					<ul class="contacts">
+						<li>
+							<a href="tel:+5531975287424">
 						<img src="img/phone.svg" alt="" /> (31) 9 75287424
 					</a>
-				</li>
-				<li>
-					<a href="mailto:gabriel.costa949@gmail.com">
+						</li>
+						<li>
+							<a href="mailto:gabriel.costa949@gmail.com">
 						<img src="img/email.svg" alt="" /> gabriel.costa949@gmail.com
 					</a>
-				</li>
-				<li>
-					<a href="https://https://www.linkedin.com/in/gabriel-de-paula-752660142/" target="blank">
+						</li>
+						<li>
+							<a href="https://https://www.linkedin.com/in/gabriel-de-paula-752660142/" target="blank">
 						<img src="img/linkedin.svg" alt="" /> Gabriel de Paula
 					</a>
-				</li>
-			</ul>
-		</div>
-		
-		<span class="scroll-btn">
+						</li>
+					</ul>
+				</div>
+
+				<span class="scroll-btn">
 			<a href="#">
 				<span class="mouse">
 					<span>
 					</span>
 				</span>
-			</a>
-		</span>
+				</a>
+				</span>
 
-	</div>
-	</div>
-
-	<div class="sobre">
-		<div class="animated fadeln">
-		<img class="img-box" src="./img/kait-loggins-291456-min.jpg"/>
+			</div>
 		</div>
-     <div class="article-box">
-		<article>
-				<h1 class="title">Sobre</h1>	
-				<p class="paragrafo">Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer in sapien. Fusce
-					tellus odio, dapibus id, fermentum quis, suscipit id, erat. Fusce aliquam vestibulum ipsum. Aliquam erat volutpat. Pellentesque
-					sapien. Cras elementum. Nulla pulvinar eleifend sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-					ridiculus mus. Quisque porta. Vivamus porttitor turpis ac leo.</p>
-				
 
-		</article>
+		<div class="sobre">
+			<div class="animated fadeln">
+				<img class="img-box" src="./img/kait-loggins-291456-min.jpg" />
+			</div>
+			<div class="article-box">
+				<div class="col-md-12">
+					<article>
+						<h1 class="title">Sobre</h1>
+						<p class="paragrafo">Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer in sapien. Fusce
+							tellus odio, dapibus id, fermentum quis, suscipit id, erat. Fusce aliquam vestibulum ipsum. Aliquam erat volutpat.
+							Pellentesque sapien. Cras elementum. Nulla pulvinar eleifend sem. Cum sociis natoque penatibus et magnis dis parturient
+							montes, nascetur ridiculus mus. Quisque porta. Vivamus porttitor turpis ac leo.</p>
+
+
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="formacao">
+
+			<section id="formation">
+
+				<h2 class="title">Formação</h2>
+				<ul>
+					<li>
+						<a class="alinhar" href="www.pucminas.br">PUC Minhas - Bracharel em Sistemas de Informação <small>(2016)</small></a>
+						<p class="alinhar">Sed dictum velit mollis nulla lobortis bibendum. Morbi sit amet fermentum urna</p>
+					</li>
+			</section>
+
+		</div>
+		<div class="conhecimento">
+
+			<section id="skills">
+				<h2 class="title" style='margin-bottom:40px;text-align:center;'>Conhecimentos</h2>
+
+				<p class="name-skill">HTML</p>
+				<progress value="80" max="100"></progress>
+
+
+				<p class="name-skill">CSS</p>
+				<progress value="70" max="100"></progress>
+
+
+				<p class="name-skill">JavaScript</p>
+				<progress value="60" max="100"></progress>
+
+
+				<p class="name-skill">Angular</p>
+				<progress value="70" max="100"></progress>
+
+				<p class="name-skill">C#</p>
+				<progress value="60" max="100"></progress>
+
+
+				<p class="name-skill">Java</p>
+				<progress value="80" max="100"></progress>
+
+
+				<p class="name-skill">MySQL</p>
+				<progress value="80" max="100"></progress>
+
+			</section>
+		</div>
+		<div class="footer">
+			<footer>
+				&copy; 2017 - Gabriel de Paula
+			</footer>
 		</div>
 	</div>
-	<div class="formacao">
-
-		<section id="formation">
-
-			<h2 class="title">Formação</h2>			
-			<ul>
-				<li>
-					<a class="alinhar" href="www.pucminas.br">PUC Minhas - Bracharel em Sistemas de Informação <small>(2016)</small></a>
-					<p class="alinhar">Sed dictum velit mollis nulla lobortis bibendum. Morbi sit amet fermentum urna</p>
-				</li>
-		</section>
-
-	</div>
-<div class="conhecimento">
-	
-	<section id="skills">
-			<h2 class="title" style='margin-bottom:40px;text-align:center;'>Conhecimentos</h2>
-		
-			<p class="name-skill">HTML</p><progress value="80" max="100"></progress>
-	
-	
-			<p class="name-skill">CSS</p><progress value="70" max="100"></progress>
-	
-	
-			<p class="name-skill">JavaScript</p><progress value="60" max="100"></progress>
-		
-		
-			<p class="name-skill">Angular</p><progress value="70" max="100"></progress>
-		
-			<p class="name-skill">C#</p><progress value="60" max="100"></progress>
-		
-	
-			<p class="name-skill">Java</p><progress value="80" max="100"></progress>
-	
-		
-			<p class="name-skill">MySQL</p><progress value="80" max="100"></progress>
-		
-	</section>
-</div>
-	<div class="footer">
-		<footer>
-			&copy; 2017 - Gabriel de Paula
-		</footer>
-	</div>
-	
-	<script src="js/jquery.min.js"></script>
-	<script src='js/jquery-ui.min.js'></script>
-	<script>
-
-		$(function () {
-			$('progress').each(function () {
-				var max = $(this).val();
-				$(this).val(0).animate({ value: max }, { duration: 2000, easing: 'easeOutCirc' });
+	<div class="row">
+		<script src="vendors/jquery.min.js"></script>
+		<script src='vendors/jquery-ui.min.js'></script>
+		<script>
+			window.addEventListener("scroll", function (event) {
+				if (pageYOffset = 100) {
+					$(function () {
+						$('progress').each(function () {
+							var max = $(this).val();
+							$(this).val(0).animate({ value: max }, { duration: 2000, easing: 'easeOutCirc' });
+						});
+					});
+				}
 			});
-		});
-	</script>
+		</script>
 </body>
 
 </html>
