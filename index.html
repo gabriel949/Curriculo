@@ -16,6 +16,7 @@
 	<div class='container-fluid'>
 		<div class="row">
 			<div class="imag">
+				<div class="wow animated fadeInUp"  data-wow-duration="2s" data-wow-delay="1s">
 				<img id="foto" src="http://graph.facebook.com/100004999451297/picture?type=large">
 
 				<h1 id="nome">Gabriel de Paula</h1>
@@ -39,7 +40,7 @@
 						</li>
 					</ul>
 				</div>
-
+				</div>
 				<span class="scroll-btn">
 			<a href="#">
 				<span class="mouse">
@@ -55,9 +56,9 @@
 		<div class="sobre">
 			<article class="article col-sm-offset-1 col-md-offset-1">
 			
-			<div class="animated fadeln">
+			
 				<img class="img-box" src="./img/kait-loggins-291456-min.jpg" />
-			</div>
+			
 			<div class="article-box">
 				
 					
@@ -127,7 +128,9 @@
 	<div class="row">
 		<script src="vendors/jquery.min.js"></script>
 		<script src='vendors/jquery-ui.min.js'></script>
+		<script src='vendors/wow.min.js'></script>
 		<script>
+			new WOW().init();
 			window.addEventListener("scroll", function (event) {
 				if (pageYOffset = 100) {
 					$(function () {
