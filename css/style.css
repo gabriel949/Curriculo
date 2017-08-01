@@ -273,19 +273,22 @@ padding-top: 45px;
 
 .img-box{
 	max-width: 800px;
-	margin-top:60px;
-	margin-left: 140px;
-	position: relative;
-}
+	float: left;
+	margin-right: -28%;
 
+}
+.sobre{
+	padding-top: 80px;
+}
 .article-box{
-	padding: 20px 20px 20px 15px;
-    background-color: #ffffff;
-	position: absolute;
-	left: 700px;
-	top:800px;
-	max-width: 500px;
-	max-height: 500px;
+	background-color: #fff;
+    float: left;
+    margin-top: 7%;
+    padding: 35px 0 35px 50px;
+    width: 100%;
+    max-width: 530px;
+    position: relative;
+    z-index: 2;
 }
 
 .name-skill{
