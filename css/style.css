@@ -2,29 +2,65 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	
+}
+#menu ul {
+    padding:0px;
+    margin:0px;
+	list-style:none;
+}
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	margin-right: 30px;
+    display: inline-block;
+    background-color:#090b16;
+    text-decoration: none;
+}
+li:nth-child(4):after {
+  content:"";
+  width:80px;
+  height:3px;
+  position:absolute;
+  background:#2661e2;
+  top:0;
+  left:0;
+  transform:translateX(0);
+  transition:.5s;
+}
+ 
+nav ul li:nth-child(2):hover ~ li:nth-child(4):after { transform:translateX(82px); }
+nav ul li:nth-child(3):hover ~ li:nth-child(4):after { transform:translateX(190px); }
+nav ul li:nth-child(4):hover:after { transform:translateX(287px); }
+ 
+.men{
+
+	padding:20px 25px;
+	height: 60px;
+	width: 100%;
+	background-color: #090b16;
+	position: fixed;
+	z-index: 99999;
 }
 
 .imag {
-	background: url("../img/back.svg");
-	background-repeat: no-repeat;
+	background-color:#090b16; 
 	height: 100vh;
-	background-size: cover;
 	text-align: center;
 }
 
-#imagem {
-	max-width: 100%;
-	max-height: 100%;
-}
+
 
 #foto {
-	border-radius: 100px;
+	border-radius: 150px;
 	-webkit-transition: all 0.5s linear;
 	transition: all 0.5s linear;
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
-	margin-top: 100px;
+	margin-top: 80px;
+	max-width: 230px;
+	max-height: 230px
 }
 
 #foto:hover {
@@ -33,12 +69,12 @@
 }
 
 ul {
-	margin-top: 10px;
+	list-style: none;
 	vertical-align: top;
 }
 
 ul li {
-	list-style-type: none;
+	margin-right: 10px;
 	color: white;
 }
 
@@ -215,11 +251,11 @@ section
 }
 
 .footer {
-	height: 100px;
+	height: 130px;
 	color: #ffffff;
 	margin-top: 50px;
-	background-color: #000000;
-	padding: 50px;
+	background-color: #090b16;
+	padding: 30px;
 	text-align: center;
 }
 
@@ -299,19 +335,27 @@ padding-top: 45px;
 
 .trabalhos{
 	padding:50px 130px 50px 130px;
+	
 
   
 }
+.git{
+	margin:0 auto;
+	max-width: 1000px ;
+}
 .github{
+	display:inline-block;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 32%;
+  margin-bottom: 8px;
+  min-width: 320px;
 	box-shadow: -1px 6px 12px rgba(25,6,11,.5);
 	border: 1px solid #ffffff;
-	height: 230px;
 	background-color: #ffffff;
 	text-align: center;
-	padding:35px 35px 10px 35px;;
-    display: inline-block;
-	width:29%;
-	margin: 2%;
+	padding:35px 35px 10px 35px;
+	min-width:250px;
 }
 
 hr{
@@ -320,6 +364,24 @@ hr{
 
 .language{
 	margin-bottom: 55px;
+}
+#logo {
+  margin-top: 70px;
+  fill: transparent;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 100px;
+  stroke-dasharray: 650 650;
+  stroke-dashoffset: 650;
+  stroke: #ffffff;
+  stroke-width: 3px;
+  -ms-transition: stroke-dashoffset 5s linear;
+  -webkit-transition: stroke-dashoffset 5s linear;
+  -moz-transition: stroke-dashoffset 5s linear;
+  transition: stroke-dashoffset 5s linear;
+}
+
+#logo.trace {
+  stroke-dashoffset: 0;
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -332,7 +394,15 @@ hr{
 @media screen and (max-width: 1280px) {
     .img-box {
         max-width: 100%
-    }
+	}
+	.scroll-btn{
+		display:none;
+	}
+	#informacoes{
+		display:inline-block;
+		vertical-align: top;
+
+	}
 }
 @media (min-width: 0) and (max-width: 767px) {
     .img-box {
@@ -348,15 +418,77 @@ hr{
 }
 @media (min-width: 0) and (max-width: 991px) {
     .article-box {
-        margin-top: -75px;
+     	margin-top: -75px;
         max-width: 360px;
         padding: 17px 0 17px 40px;
     }
 }
 @media (min-width: 0) and (max-width: 767px) {
+	.trabalhos{
+		padding:10px;
+	}
     .article-box {
         max-width: 90%;
         margin-top: -65px;
         padding: 17px 0 17px 40px;
     }
 }
+
+@media screen and (max-width:995px){
+	#logo{
+        font-size: 75px;
+    }
+    svg{
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:556px){
+	#logo{
+		font-size: 55px;
+		margin-top: 40px;
+    }
+    svg{
+        width: 350px;
+	}
+	
+	#foto{
+		margin-top:180px;
+		border-radius: 20px;
+		max-height: 150px;
+		max-width: 150px;
+	}
+	.formacao{
+		padding:60px 10px 40px 10px;
+	}
+	
+}
+
+@media screen and (max-width:425px){
+	#menu ul{
+		font-size:10px;
+		}
+		#menu ul li a {
+			margin-right: 5px;
+		}
+
+		li:nth-child(4):after{
+			display:none;
+		}
+}
+
+@media screen and (max-width:345px){
+
+	#logo{
+		font-size: 45px;
+	}
+
+	svg{
+        width: 240px;
+	}
+
+	.github{
+		min-width: 95%;
+	}
+}
+

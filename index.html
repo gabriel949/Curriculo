@@ -5,7 +5,7 @@
 	<title>Gabriel Victor Oliveira de Paula Costa</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<link rel="stylesheet" href="vendors/animate.css">
 	<link rel="stylesheet" href="vendors/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet">
@@ -13,35 +13,35 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<div class='container-fluid'>
 		<div class="row">
+			<div class="men">
+				
+				<nav id="menu" >
+					<ul>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#formation">Formação</a></li>
+						<li><a href="#conhec">Conhecimentos</a></li>
+						<li><a href="#git">GitHub</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div class="imag">
+
 				<div class="wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
 					<img id="foto" src="http://graph.facebook.com/100004999451297/picture?type=large">
 
-					<h1 id="nome">Gabriel de Paula</h1>
 
-					<div id="informacoes">
-						<ul class="contacts">
-							<li>
-								<a href="tel:+5531975287424">
-						<img src="img/phone.svg" alt="" /> (31) 9 75287424
-					</a>
-							</li>
-							<li>
-								<a href="mailto:gabriel.costa949@gmail.com">
-						<img src="img/email.svg" alt="" /> gabriel.costa949@gmail.com
-					</a>
-							</li>
-							<li>
-								<a href="https://https://www.linkedin.com/in/gabriel-de-paula-752660142/" target="blank">
-						<img src="img/linkedin.svg" alt="" /> Gabriel de Paula
-					</a>
-							</li>
-						</ul>
-					</div>
+
+
 				</div>
+
+
+				<svg id="logo" width="1000" height="200">
+					<text id="logo-text" x="50%" y="50%" text-anchor="middle">Gabriel Victor</text>
+				</svg>
+
 				<span class="scroll-btn">
 			<a href="#">
 				<span class="mouse">
@@ -52,10 +52,10 @@
 				</span>
 
 			</div>
-		</div>
 
-		
-			<article class="sobre col-sm-offset-1 col-md-offset-1">
+
+
+		<article class="sobre col-sm-offset-1 col-md-offset-1" id="sobre">
 
 
 				<img class="img-box" src="./img/kait-loggins-291456-min.jpg" />
@@ -71,71 +71,90 @@
 
 
 			</article>
-			
+
+			</div>
 		</div>
-	</div>
-	<div class="formacao">
+		<div class="formacao" id="formation">
 
-		<section id="formation">
+			<section >
 
-			<h2 class="title">Formação</h2>
-			<ul>
-				<li>
-					<a class="alinhar" href="www.pucminas.br">PUC Minhas - Bracharel em Sistemas de Informação <small>(2016)</small></a>
-					<p class="alinhar">Sed dictum velit mollis nulla lobortis bibendum. Morbi sit amet fermentum urna</p>
-				</li>
-		</section>
+				<h2 class="title">Formação</h2>
+				<ul>
+					<li>
+						<a class="alinhar" href="www.pucminas.br">PUC Minhas - Bracharel em Sistemas de Informação <small>(2016)</small></a>
+						<p class="alinhar">Sed dictum velit mollis nulla lobortis bibendum. Morbi sit amet fermentum urna</p>
+					</li>
+			</section>
 
-	</div>
-	<div class="conhecimento" id="conhec">
+		</div>
+		<div class="conhecimento" id="conhec">
 
-		<section id="skills">
-			<h2 class="title" style='margin-bottom:40px;text-align:center;'>Conhecimentos</h2>
+			<section id="skills">
+				<h2 class="title" style='margin-bottom:40px;text-align:center;'>Conhecimentos</h2>
 
-			<p class="name-skill">HTML</p>
-			<progress value="0" max="100" data-valueto="40"></progress>
-
-
-			<p class="name-skill">CSS</p>
-			<progress value="0" max="100" data-valueto="30"></progress>
+				<p class="name-skill">HTML</p>
+				<progress value="0" max="100" data-valueto="40"></progress>
 
 
-			<p class="name-skill">JavaScript</p>
-			<progress value="0" max="100" data-valueto="35"></progress>
+				<p class="name-skill">CSS</p>
+				<progress value="0" max="100" data-valueto="30"></progress>
 
 
-			<p class="name-skill">Angular</p>
-			<progress value="0" max="100" data-valueto="25"></progress>
-
-			<p class="name-skill">C#</p>
-			<progress value="0" max="100" data-valueto="40"></progress>
+				<p class="name-skill">JavaScript</p>
+				<progress value="0" max="100" data-valueto="35"></progress>
 
 
-			<p class="name-skill">Java</p>
-			<progress value="0" max="100" data-valueto="20"></progress>
+				<p class="name-skill">Angular</p>
+				<progress value="0" max="100" data-valueto="25"></progress>
+
+				<p class="name-skill">C#</p>
+				<progress value="0" max="100" data-valueto="40"></progress>
 
 
-			<p class="name-skill">MySQL</p>
-			<progress value="0" max="100" data-valueto="15"></progress>
+				<p class="name-skill">Java</p>
+				<progress value="0" max="100" data-valueto="20"></progress>
 
-		</section>
-	</div>
-<div class="trabalhos">
-	<h2 class="title" style='text-align:center;'>GitHub</h2>
+
+				<p class="name-skill">MySQL</p>
+				<progress value="0" max="100" data-valueto="15"></progress>
+
+			</section>
+		</div>
+		<div class="trabalhos">
+			<h2 class="title" style='text-align:center;'>GitHub</h2>
 			<hr/>
 
-		<div id="git">
-			
+			<div id="git">
+
+			</div>
+
 		</div>
 
-	</div>	
-			
 		</section>
-	<div class="footer">
-		<footer>
-			&copy; 2017 - Gabriel de Paula
-		</footer>
-	</div>
+		<div class="footer">
+			<footer>
+				<ul class="contacts">
+					<li>
+						<a href="tel:+5531975287424   ">
+						<img src="img/phone.svg" alt="" /> (31) 9 75287424
+					</a>
+					</li>
+					<li>
+						<a href="mailto:gabriel.costa949@gmail.com   ">
+						<img src="img/email.svg" alt="" /> gabriel.costa949@gmail.com
+					</a>
+					</li>
+					<li>
+						<a href="https://https://www.linkedin.com/in/gabriel-de-paula-752660142/" target="blank">
+						<img src="img/linkedin.svg" alt="" /> Gabriel de Paula
+					</a>
+					</li>
+				</ul>
+				&copy; 2017 - Gabriel de Paula
+
+
+			</footer>
+		</div>
 	</div>
 	<div class="row">
 		<script src="vendors/jquery.min.js"></script>
